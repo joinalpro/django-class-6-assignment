@@ -3,4 +3,8 @@ from django.http import HttpResponse
 
 # Create your views here.
 def seo(request):
-    return render(request, 'seo.html')
+    seo_checklist = {'seo': ['Onpage','keyword', 'internal linking', 'external linking', 'content-optimization']}
+    return render(request, 'seo/seo.html',seo_checklist)
+
+def seo_checklist(request):
+    return render(request,'seo/seo-checklist.html')

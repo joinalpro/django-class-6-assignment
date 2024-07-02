@@ -3,4 +3,4 @@ from django.http import HttpResponse
 
 # Create your views here.
 def content(request):
-    return render(request, 'content.html')
+    return render(request, 'contentoptimization/content.html')
